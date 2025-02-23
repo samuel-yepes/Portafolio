@@ -6,7 +6,7 @@
     word-spacing: 1px;
 }
 
-.icon{
+.icon {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -59,9 +59,12 @@ html::-webkit-scrollbar-thumb {
     position: relative;
     padding-left: 50px;
     left: auto;
-    width: 300px; /* Ajusta el ancho según el tamaño de tus imágenes */
-    height: 300px; /* Ajusta la altura según el tamaño de tus imágenes */
-    perspective: 1000px; /* Para dar un efecto 3D */
+    width: 300px;
+    /* Ajusta el ancho según el tamaño de tus imágenes */
+    height: 300px;
+    /* Ajusta la altura según el tamaño de tus imágenes */
+    perspective: 1000px;
+    /* Para dar un efecto 3D */
     padding-top: 20px;
 }
 
@@ -69,17 +72,22 @@ html::-webkit-scrollbar-thumb {
     position: relative;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d; /* Mantiene el efecto 3D */
-    animation: spin 4s linear infinite; /* Aplica la animación de rotación */
+    transform-style: preserve-3d;
+    /* Mantiene el efecto 3D */
+    animation: spin 4s linear infinite;
+    /* Aplica la animación de rotación */
 }
 
 .icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 250px; /* Ajusta el tamaño para que coincida con la primera imagen */
-    height: 250px; /* Ajusta el tamaño para que coincida con la primera imagen */
-    backface-visibility: hidden; /* Oculta la parte trasera de la imagen durante la rotación */
+    width: 250px;
+    /* Ajusta el tamaño para que coincida con la primera imagen */
+    height: 250px;
+    /* Ajusta el tamaño para que coincida con la primera imagen */
+    backface-visibility: hidden;
+    /* Oculta la parte trasera de la imagen durante la rotación */
 }
 
 .front {
@@ -88,20 +96,58 @@ html::-webkit-scrollbar-thumb {
 }
 
 .back {
-    transform: rotateY(180deg); /* Inicialmente rotada 180 grados */
-    background-color: #A1E3F9; /* Color de fondo para la segunda imagen */
+    transform: rotateY(180deg);
+    /* Inicialmente rotada 180 grados */
+    background-color: #A1E3F9;
+    /* Color de fondo para la segunda imagen */
     z-index: 1;
+}
+
+.img-logo{
+    display: none;
+}
+
+@media (max-width:780px) {
+    .card {
+        display: none;
+    }
+
+    .img-logo{
+        display: block;
+    }
+
+    .img-top-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100px;
+        height: auto;
+        z-index: 10;
+    }
+    .img-top-left {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        height: auto;
+        z-index: 10;
+    }
 }
 
 @keyframes spin {
     0% {
-        transform: rotateY(0deg); /* Inicia la rotación mostrando la primera imagen */
+        transform: rotateY(0deg);
+        /* Inicia la rotación mostrando la primera imagen */
     }
+
     50% {
-        transform: rotateY(180deg); /* Gira y muestra la segunda imagen */
+        transform: rotateY(180deg);
+        /* Gira y muestra la segunda imagen */
     }
+
     100% {
-        transform: rotateY(360deg); /* Completa la rotación y vuelve a la primera imagen */
+        transform: rotateY(360deg);
+        /* Completa la rotación y vuelve a la primera imagen */
     }
 }
 
@@ -112,25 +158,34 @@ html::-webkit-scrollbar-thumb {
     margin: 20px auto;
     margin-top: -24%;
 }
-.parrafo-video{
+
+.parrafo-video {
     color: #A1E3F9;
     text-align: center;
 }
 
 h1 i {
-    color: white; /* Hace el ícono negro */
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
-    font-size: 26px; /* Tamaño del ícono */
+    color: white;
+    /* Hace el ícono negro */
+    margin-right: 8px;
+    /* Espacio entre el ícono y el texto */
+    font-size: 26px;
+    /* Tamaño del ícono */
 }
 
 video {
-    width: 32%; /* Ajusta el tamaño según necesites */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    width: 32%;
+    /* Ajusta el tamaño según necesites */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra elegante */
 }
 
 @media screen and (max-width: 1200px) {
-    video,  #video-anime {
+
+    video,
+    #video-anime {
         margin-top: 30px;
         width: 50%;
     }
@@ -210,7 +265,7 @@ video {
 
 #typing-text {
     font-size: 18px;
-    border-right: 4px solid orange;
+    border-right: 4px solid #B1F0F7;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -389,7 +444,7 @@ video {
 }
 
 @media (max-width: 768px) {
-    .lottie-container{
+    .lottie-container {
         display: none;
     }
 }
@@ -441,7 +496,7 @@ video {
     /* Permitir que los elementos se envuelvan en múltiples filas */
 }
 
-.Parrafo{
+.Parrafo {
     color: black;
 }
 
@@ -643,7 +698,7 @@ textarea {
 .mensaje:hover {
     transform: scale(1.1);
     /* Aumenta el tamaño */
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.701);
+    box-shadow: 0 5px 15px #B1F0F7;
     /* Sombra */
 }
 
@@ -679,5 +734,10 @@ textarea {
 .redes a {
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: #B1F0F7;
+}
+
+.img-logo-footer{
+    height: 63px;
+    width: 68px;
 }
