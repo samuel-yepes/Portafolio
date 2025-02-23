@@ -105,6 +105,61 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
+#video-anime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    margin-top: -24%;
+}
+.parrafo-video{
+    color: #A1E3F9;
+    text-align: center;
+}
+
+h1 i {
+    color: white; /* Hace el ícono negro */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    font-size: 26px; /* Tamaño del ícono */
+}
+
+video {
+    width: 32%; /* Ajusta el tamaño según necesites */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+@media screen and (max-width: 1200px) {
+    video,  #video-anime {
+        margin-top: 30px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #video-anime {
+        margin-top: -10%;
+    }
+
+    video {
+        width: 108%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #video-anime {
+        margin-top: 0;
+    }
+
+    .parrafo-video {
+        font-size: 1.2rem;
+    }
+
+    video {
+        width: 90%;
+    }
+}
+
 .idioma {
     margin: 10px;
 }
@@ -404,9 +459,9 @@ html::-webkit-scrollbar-thumb {
     transition: all 1s ease;
     --s: 200px;
     /* control the size */
-    --c1: #b9f0fa;
-    --c2: #777878;
-    --c3: rgb(69 87 84);
+    --c1: #80c0ff;
+    --c2: #8b8b8b;
+    --c3: #33585c;
     background: repeating-conic-gradient(from 30deg,
             #0000 0 120deg,
             var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
