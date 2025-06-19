@@ -58,8 +58,9 @@ Entre sus secciones encontrarás:
 
 ## 📸 Capturas del Proyecto
 
-![Captura del home](![image](D:\Users\practecnologia03\PROYECTOS-REACT\Portafolio\Img\inicio.png))
-![Captura del formulario de contacto](![image](D:\Users\practecnologia03\PROYECTOS-REACT\Portafolio\Img\contacto.png))
+![Captura del home](Img/inicio.png)
+![Captura del formulario de contacto](Img/contacto.png)
+
 ---
 
 ## 🔥 Funcionalidades Destacadas
