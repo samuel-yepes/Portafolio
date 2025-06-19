@@ -344,11 +344,14 @@
             <p>si deseas conocerme mas llena el formulario, mandame un mensaje y me contactare contigo</p>
             <input id="nombre" type="text" name="mombre" placeholder="Nombre" required="">
             <input id="email" type="email" name="email" placeholder="E-mail" required="">
-            <textarea id="mensaje" cols="20" rows="4" name="mensaje" placeholder="Mensaje | Message"
+            <textarea id="mensaje" cols="20" rows="4" name="mensaje" placeholder="Message"
                 required=""></textarea>
             <div class="buttom">
                 <button type="submit" class="mensaje">Enviar Mensaje</button>
             </div>
+            <p id="mensajeError"></p>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
         <div id="result-container"></div>
     </section>
