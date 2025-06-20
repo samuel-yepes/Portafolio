@@ -22,12 +22,11 @@ function typeWriter() {
 }
 
 window.onload = function() {
-    detectLanguage(); // Llama a la función para determinar el idioma.
+    detectLanguage(); 
     setTimeout(typeWriter, 500); // Espera 500ms antes de empezar la animación de escritura.
 };
 
 
-// Espera a que el documento HTML se cargue completamente antes de ejecutar el código JavaScript
 document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('contactForm');
@@ -36,40 +35,40 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const nombre = document.getElementById('nombre').value;
-        const correo = document.getElementById('email').value;
-        const mensaje = document.getElementById('mensaje').value;
+     const nombre = document.getElementById('nombre').value;
+     const correo = document.getElementById('email').value;
+     const mensaje = document.getElementById('mensaje').value;
 
-        if(nombre.trim() === ''){
-            mensajeError.innerHTML = 'Ingresa tu nombre';
-            return;
-        }
+    if(nombre.trim() === '' || mensaje.trim() === ''){
+        mensajeError.innerHTML = 'Ingrese los valores requeridos'; 
+        mensajeError.style.color = 'red';
+        mensajeError.style.textAlign = 'center';
+        mensajeError.style.fontSize = '1.5rem';
+        mensajeError.style.fontWeight = 'bold';
+        return;
+    }
 
-        if(mensaje.trim() === ''){
-            mensajeError.innerHTML = 'Ingresa un mensaje';
-            return;
-        }
-        
-        if(correo.trim() === ''){
-            mensajeError.innerHTML = 'ingresa tu correo'
-        }
+    if(correo.trim() === ''){
+        mensajeError.innerHTML = 'ingrese un correo';
+        mensajeError.style.color = 'red';
+        mensajeError.style.textAlign = 'center';
+        mensajeError.style.fontSize = '1.5rem';
+        mensajeError.style.fontWeight = 'bold';
+        return;
+    }
 
-        if(!validarEmail(correo)){
-            mensajeError.innerHTML = 'Ingresa un correo electrónico válido';
-            mensajeError.style.textAlign = 'center';
-            mensajeError.style.color = 'red';
-            mensajeError.style.fontSize = '1.2em';
-            mensajeError.style.fontWeight = 'bold';
-            mensajeError.style.marginTop = '10px';
-            mensajeError.style.marginBottom = '10px';
-            console.log('Correo inválido');
-            return;
-        }
-
+    if(!validarEmail(correo)){
+        mensajeError.innerHTML = 'Ingrese un correo valido';
+        mensajeError.style.color = 'red';
+        mensajeError.style.textAlign = 'center';
+        mensajeError.style.fontSize = '1.5rem';
+        mensajeError.style.fontWeight = 'bold';
+        return;
+    }
 
     function validarEmail(email) {
-        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return re.test(String(email).toLowerCase());
+        const validacion = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return validacion.test(String(email).toLowerCase());
     }
     });
 });
