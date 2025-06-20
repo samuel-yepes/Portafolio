@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const validacion = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return validacion.test(String(email).toLowerCase());
     }
+    console.log('El formulario se ha cargado correctamente con los datos: ' + nombre + ', ' + correo + ', ' + mensaje);
     });
 });
 
