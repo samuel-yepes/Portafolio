@@ -42,6 +42,8 @@
             <img class="icon back" src="Img/logo-mio.png" height="300px" width="300px">
             <img class="icon front" src="Img/fotoMia_anime.png" height="250px" width="250px">
         </div>
+
+
     </div>
     <div class="img-logo">
         <img class="img-top-left" src="Img/logo-blanco.png" alt="imagen del logo de samuel">
@@ -81,9 +83,8 @@
     <div class="interfaz" data-aos="fade-right">
         <div class="person">
             <div class="Foto">
-                <dotlottie-player src="https://lottie.host/68c99c69-cb07-4e5d-abe7-772fd078b997/bZwtk8AoJa.lottie"
-                    background="transparent" speed="1" style="width: 300px; height: 300px" loop
-                    autoplay></dotlottie-player>
+                <spline-viewer url="https://prod.spline.design/65m2Q-v-q5BXs2Cj/scene.splinecode"
+                    style="width: 380px; height: 380px"></spline-viewer>
             </div>
             <div>
                 <p>Mi nombre esa Samuel Isaac Yepes Molina. Soy tecnologo en desarrollo de software y estoy estudiando
@@ -348,27 +349,44 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="Repositorio">
-        <a href="https://github.com/samuel-yepes" target="_blank">Ver más</a>
+        <div class="Repositorio">
+            <a href="https://github.com/samuel-yepes" target="_blank">Ver más</a>
+        </div>
     </div>
     <div class="Subtítulo" data-aos="fade-up">
         <i class="fa-solid fa-envelope"></i>
         <p id="links-color">Contáctame</p>
     </div>
     <section id="contacto" data-aos="fade-up">
+<<<<<<< HEAD
         <form id="contactForm">
             <p>Si deseas conocerme más, llena el formulario, mándame un mensaje y me contactaré contigo</p>
             <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
             <input id="email" type="email" name="email" placeholder="E-mail" required>
             <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message"
                 required></textarea>
+=======
+        <div class="spline">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/Zt2Mg7XM2Qewy5ZX/scene.splinecode"
+                style="width: 400px; height: 400px"></spline-viewer>
+        </div>
+        <form id="contactForm" action="https://formsubmit.co/your_email@example.com" method="POST">
+            <p>si deseas conocerme mas llena el formulario, mandame un mensaje y me contactare contigo</p>
+            <input id="nombre" type="text" name="name" placeholder="Nombre">
+            <input id="email" type="email" name="email" placeholder="E-mail">
+            <textarea id="mensaje" cols="20" rows="4" name="mensaje" placeholder="Message"></textarea>
+>>>>>>> 5fa4ab2740774ba91ca99614a4f2bd91fb196b2d
             <div class="buttom">
                 <button type="submit" class="mensaje">Enviar Mensaje</button>
             </div>
+            <p id="mensajeError"></p>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
 
         <div id="result-container"></div>
+
     </section>
     <div class="diseñado">
         <div class="redes">
@@ -400,6 +418,7 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
 
 </body>
 
